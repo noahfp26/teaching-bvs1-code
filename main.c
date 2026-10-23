@@ -26,9 +26,14 @@ static void uart_puts(const char *s)
     }
 }
 
+void before_main(void)
+{
+    uart_puts("before main\n");
+}
+
 void main(void)
 {
-    uart_puts("Hello BVS1\n");
+    uart_puts("Hello from Noah\n");
 
     for (;;) {
     }

@@ -4,6 +4,7 @@
 
 _start:
     la sp, _stack_top
+    call before_main
     call main
 
 1:
